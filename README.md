@@ -6,7 +6,12 @@ Sun Tracer is a tool for viewing the sun's position at a specific time and date,
 
 It may be useful for architects and urban planners who need to see how building shadows move throughout the day and for insolation analysis in general.
 
-The tool can be installed from the [Kolba plugin](https://github.com/pavelpereverzev/kolba) using the [Web Scripts](https://github.com/pavelpereverzev/kolba#web-scripts) feature: open Kolba, click the WebScripts <img src="https://gisworks.ru/qgis_tools/img/line_webscript.png" height="20" style="vertical-align: middle;"> button, and download the `sun_tracer` script. On first launch, the tool will prompt you to download the countries/timezones layer, which is required for timezone detection. You can also download this layer manually from this repository (file [countries.zip](https://github.com/pavelpereverzev/sun_tracer/raw/refs/heads/main/countries_tz.zip)) and unpack it into the folder containing the script.
+The tool can be installed from the [Kolba plugin](https://github.com/pavelpereverzev/kolba) using the [Web Scripts](https://github.com/pavelpereverzev/kolba#web-scripts) feature: open Kolba, click the WebScripts <img src="https://gisworks.ru/qgis_tools/img/line_webscript.png" height="20" style="vertical-align: middle;"> button, and download the `sun_tracer` script. 
+
+<img width="1272" height="601" alt="install_st" src="https://github.com/user-attachments/assets/266acbf6-a149-424c-b492-14b807292a40" />
+
+>[!NOTE]
+>On first launch, the tool will ask you to download the `countries_tz` layer, which is required for timezone detection. You can also download this layer manually from this repository (file [countries.zip](https://github.com/pavelpereverzev/sun_tracer/raw/refs/heads/main/countries_tz.zip)) and unpack it into the folder containing the script.
 
 The tool consists of two sections: **Sun settings** and **Shadow generator**.
 
