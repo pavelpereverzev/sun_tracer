@@ -16,7 +16,10 @@ The tool can be installed from the [Kolba plugin](https://github.com/pavelpereve
 The tool consists of two sections: **Sun settings** and **Shadow generator**.
 
 ### **Sun settings** 
-Visualizes the sun's path according to the selected time and date. 
+Visualizes the sun's path according to the selected time and date.
+
+<img width="1279" height="434" alt="st_first" src="https://github.com/user-attachments/assets/5bf6c35f-25b4-4f9e-b637-71f8973659f2" />
+
 
 By default, the tool shows the sun's position at the current real moment for whatever location is at the center of the map. When you pan the map to a new location, that same real moment is re-projected into the new location's local time: the sun's position, its path, and the sunrise/sunset labels update accordingly. The time slider and date picker let you set a different time manually, which then becomes the reference moment used when panning further.
 
@@ -24,6 +27,9 @@ By default, the tool shows the sun's position at the current real moment for wha
 
 ### Shadow generator
 Creates a shadow polygon layer from features of an existing layer.
+
+<img width="1279" height="434" alt="st_second" src="https://github.com/user-attachments/assets/b2af00d4-52ef-443c-bf36-7de24730cb4d" />
+
 
 Layer requirements:
 * polygon geometry
