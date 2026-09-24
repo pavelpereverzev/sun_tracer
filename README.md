@@ -2,9 +2,18 @@
 
 Sun Tracer is a tool for viewing the sun's position at a specific time and date, and generating shadows cast by layer objects. Particulary based on [suncalc.js](https://suncalc.net/scripts/suncalc.js)
 
+<img width="1351" height="777" alt="st_img" src="https://github.com/user-attachments/assets/c45a50ca-4b1a-4c18-8544-a8cc068da760" />
+
+
+
+
 It may be useful for architects and urban planners who need to see how building shadows move throughout the day and for insolation analysis in general.
 
 The tool can be installed from the [Kolba plugin](https://github.com/pavelpereverzev/kolba) using the [Web Scripts](https://github.com/pavelpereverzev/kolba#web-scripts) feature: open Kolba, click the WebScripts <img src="https://gisworks.ru/qgis_tools/img/line_webscript.png" height="20" style="vertical-align: middle;"> button, and download the `sun_tracer` script. On first launch, the tool will prompt you to download the countries/timezones layer, which is required for timezone detection. You can also download this layer manually from this repository (file [countries.zip](https://github.com/pavelpereverzev/sun_tracer/raw/refs/heads/main/countries_tz.zip)) and unpack it into the folder containing the script.
+
+Video preview:
+
+https://github.com/user-attachments/assets/6b2fbe44-bac7-48db-99b1-73ad63b6ff81
 
 The tool consists of two sections: **Sun settings** and **Shadow generator**.
 
@@ -12,7 +21,7 @@ The tool consists of two sections: **Sun settings** and **Shadow generator**.
 
 By default, the tool shows the sun's position at the current real moment for whatever location is at the center of the map. When you pan the map to a new location, that same real moment is re-projected into the new location's local time: the sun's position, its path, and the sunrise/sunset labels update accordingly. The time slider and date picker let you set a different time manually, which then becomes the reference moment used when panning further.
 
-`Reset` button will reset time and date values to current ones.
+`Reset date/time` button will reset date and time values to current ones.
 
 **Shadow generator** creates a shadow polygon layer from features of an existing layer.
 
