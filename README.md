@@ -4,7 +4,7 @@ Sun Tracer is a tool for viewing the sun's position at a specific time and date,
 
 It may be useful for architects and urban planners who need to see how building shadows move throughout the day and for insolation analysis in general.
 
-The tool can be installed from the [Kolba plugin](https://github.com/pavelpereverzev/kolba) using the [Web Scripts](https://github.com/pavelpereverzev/kolba#web-scripts) feature: open Kolba, click the WebScripts <img src="[https://xn--80akhbydhr.com](https://camo.githubusercontent.com/ad7b606919a2bc4ef55c6f24e61eb33677686715d4d7d36193338d293e2523cb/68747470733a2f2f676973776f726b732e72752f716769735f746f6f6c732f696d672f6c696e655f7765627363726970742e706e67)" height="20" style="vertical-align: middle;"> button, and download the `sun_tracer` script. On first launch, the tool will prompt you to download the countries/timezones layer, which is required for timezone detection. You can also download this layer manually from this repository (file [countries.zip](https://github.com/pavelpereverzev/sun_tracer/raw/refs/heads/main/countries_tz.zip)) and unpack it into the folder containing the script.
+The tool can be installed from the [Kolba plugin](https://github.com/pavelpereverzev/kolba) using the [Web Scripts](https://github.com/pavelpereverzev/kolba#web-scripts) feature: open Kolba, click the WebScripts <img src="https://gisworks.ru/qgis_tools/img/line_webscript.png" height="20" style="vertical-align: middle;"> button, and download the `sun_tracer` script. On first launch, the tool will prompt you to download the countries/timezones layer, which is required for timezone detection. You can also download this layer manually from this repository (file [countries.zip](https://github.com/pavelpereverzev/sun_tracer/raw/refs/heads/main/countries_tz.zip)) and unpack it into the folder containing the script.
 
 The tool consists of two sections: **Sun settings** and **Shadow generator**.
 
@@ -26,3 +26,5 @@ Firstly select a polygon layer from the current project in `Layer` combobox. The
 Next, select the objects you want to analyze. As soon as objects are selected, purple shadow geometries appear as a preview (limited to the first 20 selected objects, just to keep the preview responsive). If the preview looks right, click `Create layer`. It runs the shadow generation for all selected features, not just the previewed ones.
 
 Checking `Dissolve intersecting shadows` merges overlapping shadow polygons in the output layer. If unchecked, each shadow remains a separate polygon.
+
+When calculating shadows, the height and relative positioning of objects are taken into account. If two buildings stand side by side, a shorter building would not cast a shadow onto a taller one if it is situated further away from the sun (relative to the direction of the sun's rays).
